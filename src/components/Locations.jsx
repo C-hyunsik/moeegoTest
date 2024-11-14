@@ -9,8 +9,9 @@ function Locations() {
       <div className="city-list">
         <span>서울</span> <span>세종</span> <span>강원</span> <span>인천</span>
         <span>경기</span> <span>충북</span> <span>충남</span> <span>경북</span>
-        <span>대전</span> <br/>
-        <span>대구</span> <span>전북</span> <span>경남</span>
+        <span>대전</span>
+        <span className="start-new-row">대구</span>
+        <span>전북</span> <span>경남</span>
         <span>울산</span> <span>광주</span> <span>부산</span> <span>전남</span>
         <span>제주</span>
       </div>

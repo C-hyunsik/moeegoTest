@@ -8,12 +8,30 @@ function MainBanner() {
       <div className="search-category">
         <input type="text" placeholder="검색어 입력" />
         <div className="categories">
-          <span>운/연애타로</span>
-          <span>웨딩</span>
-          <span>레슨/과외</span>
-          <span>체육/레저</span>
-          <span>취미/자격증</span>
-          <span>자동차</span>
+          <div className="category-item">
+            <img src="./src/image/home.png" alt="홈/인테리어"/>
+            <span>홈/인테리어</span>
+          </div>
+          <div className="category-item">
+            <img src="./src/image/si.png" alt="외주"/>
+            <span>외주</span>
+          </div>
+          <div className="category-item">
+            <img src="./src/image/fashion.png" alt="패션/뷰티"/>
+            <span>패션/뷰티</span>
+          </div>
+          <div className="category-item">
+            <img src="./src/image/study.png" alt="직무/과외"/>
+            <span>직무/과외</span>
+          </div>
+          <div className="category-item">
+            <img src="./src/image/hobby.png" alt="취미/자기계발"/>
+            <span>취미/자기계발</span>
+          </div>
+          <div className="category-item">
+            <img src="./src/image/car.png" alt="자동차"/>
+            <span>자동차</span>
+          </div>
         </div>
       </div>
     </section>
