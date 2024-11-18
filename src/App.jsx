@@ -11,7 +11,7 @@ import Fashion_beauty from './components/detail_category/Fashion_beauty';
 import Study from './components/detail_category/Study';
 import Hobby from './components/detail_category/Hobby';
 import Car from './components/detail_category/Car';
-import About from './components/homepageInfo/About';
+import About from './components/About/About';
 
 const App = () => {
   return (
