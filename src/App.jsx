@@ -2,6 +2,8 @@ import "./App.css";
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import FreeBoardForm from "./components/Community/FreeBoardForm/FreeBoardForm.jsx";
+import ViewPage from "./components/Community/ViewPage/ViewPage.jsx";
 import ProSearch from "./components/ProSearch/ProSearch";
 import MainPage from './components/mainPage';
 import { Router, Route, Routes, BrowserRouter} from "react-router-dom";
@@ -30,6 +32,8 @@ const App = () => {
           <Route path={"/about"} element={<About />} />
           <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
           <Route path="/pro" element={<div className="main-content"><ProView /></div>} />
+          <Route path={"FreeBoardForm"} element={<div className="main-content"><FreeBoardForm /></div>} />
+          <Route path={"ViewPage"} element={<div className="main-content"><ViewPage /></div>} />
         </Routes>
         <Footer />
       </BrowserRouter>
