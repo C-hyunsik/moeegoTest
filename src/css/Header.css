@@ -1,16 +1,28 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
 
+.topWrap {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
     font-size: 24px;
-    color: #00aaff;
+    color: #fcc1cc;
     font-weight: bold;
+}
+
+.nav {
+    display: flex;
 }
 
 .nav a {
