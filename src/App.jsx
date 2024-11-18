@@ -3,6 +3,11 @@ import React from "react";
 import { Router, Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Write from "./components/article/Write";
+import Update from "./components/article/Update";
+import Review from "./components/mypage/Review";
+import FreeBoardForm from "./components/Community/FreeBoardForm/FreeBoardForm.jsx";
+import ViewPage from "./components/Community/ViewPage/ViewPage.jsx";
 
 import Login from "./components/login/Login";
 import Join from "./components/join/Join";
@@ -10,8 +15,6 @@ import ProMain from "./components/pro/ProMain";
 import Prosignup from "./components/pro/Prosignup";
 import ProSub from "./components/pro/ProSub";
 
-import FreeBoardForm from "./components/articles/FreeBoardForm/FreeBoardForm.jsx";
-import ViewPage from "./components/articles/viewpage/ViewPage.jsx";
 import ProSearch from "./components/ProSearch/ProSearch";
 import MainPage from './components/mainPage';
 import Home_interior from './components/detail_category/Home_interior';
@@ -31,6 +34,15 @@ import ChangeEmail from './components/mypage/ChangeEmail';
 import SignOut from './components/mypage/SignOut';
 import MyReservation from './components/mypage/MyReservation';
 import Success from './components/mypage/Success';
+import Login from "./components/login/Login";
+import Join from "./components/join/Join";
+import ProMain from "./components/pro/ProMain";
+import Prosignup from "./components/pro/Prosignup";
+import ProSub from "./components/pro/ProSub";
+import Banner from "./components/mainpage/Banner.jsx";
+import Reviews from "./components/mainpage/Reviews.jsx";
+import CleaningSection from "./components/mainpage/CleaningSection.jsx";
+import Locations from "./components/mainpage/Locations.jsx";
 
 const App = () => {
   return (
@@ -51,6 +63,16 @@ const App = () => {
           <Route path={"/about"} element={<About />} />
           <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
           <Route path="/pro" element={<div className="main-content"><ProView /></div>} />
+
+          {/* 개별 페이지로 접근할 수 있도록 각각 라우트 설정 */}
+          <Route path="/banner" element={<div className="main-content"><Banner /></div>} />
+          <Route path="/reviews" element={<div className="main-content"><Reviews /></div>} />
+          <Route path="/cleaning" element={<div className="main-content"><CleaningSection /></div>} />
+          <Route path="/locations" element={<div className="main-content"><Locations /></div>} />
+
+          <Route path="/community/Write" element={<div className="main-content"><Write /></div>} />
+          <Route path="/community/Update" element={<div className="main-content"><Update /></div>} />
+          <Route path="/mypage/Review" element={<div className="main-content"><Review /></div>} />
 
           {/* 마이페이지 */}
           <Route path={"/mypage"} element={<MyPage />} />
@@ -75,6 +97,7 @@ const App = () => {
           <Route path="/pro/signup/main" element={<div className="main-content"><ProMain /></div>} />
           <Route path="/pro/signup/sub" element={<div className="main-content"><ProSub /></div>} />
           <Route path="/pro/signup" element={<div className="main-content"><Prosignup /></div>} />
+
         </Routes>
         <Footer />
       </BrowserRouter>
