@@ -12,13 +12,13 @@ import Study from './components/detail_category/Study';
 import Hobby from './components/detail_category/Hobby';
 import Car from './components/detail_category/Car';
 import About from './components/about/About';
+import ProView from "./components/Pro/ProView";
 
 const App = () => {
   return (
     <div className='main-content'>
       <BrowserRouter>
         <Header />
-
         <Routes>
           <Route path={"/"} element={<MainPage/>} />
           <Route path={"/category/home"} element={<Home_interior/>} />
@@ -29,6 +29,7 @@ const App = () => {
           <Route path={"/category/car"} element={<Car/>} />
           <Route path={"/about"} element={<About />} />
           <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
+          <Route path="/pro" element={<div className="main-content"><ProView /></div>} />
         </Routes>
         <Footer />
       </BrowserRouter>
