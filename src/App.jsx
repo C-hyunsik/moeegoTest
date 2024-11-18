@@ -10,6 +10,8 @@ import ProMain from "./components/pro/ProMain";
 import Prosignup from "./components/pro/Prosignup";
 import ProSub from "./components/pro/ProSub";
 
+import FreeBoardForm from "./components/Community/FreeBoardForm/FreeBoardForm.jsx";
+import ViewPage from "./components/Community/ViewPage/ViewPage.jsx";
 import ProSearch from "./components/ProSearch/ProSearch";
 import MainPage from './components/mainPage';
 import Home_interior from './components/detail_category/Home_interior';
@@ -43,6 +45,8 @@ const App = () => {
           <Route path={"/about"} element={<About />} />
           <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
           <Route path="/pro" element={<div className="main-content"><ProView /></div>} />
+          <Route path={"FreeBoardForm"} element={<div className="main-content"><FreeBoardForm /></div>} />
+          <Route path={"ViewPage"} element={<div className="main-content"><ViewPage /></div>} />
         </Routes>
         <Footer />
       </BrowserRouter>
