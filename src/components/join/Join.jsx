@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Join = () => {
     return (
@@ -26,7 +27,7 @@ const Join = () => {
                         <lable>이메일</lable>
                     </div>
                     <div>
-                        <input type='text' placeholder='MoeeGo@example.com'/>
+                        <input type='text' placeholder='MoeeGo@example.com' />
                     </div>
                     {/* 유효성검사
                     <div>
@@ -37,7 +38,7 @@ const Join = () => {
                         <lable>비밀번호</lable>
                     </div>
                     <div>
-                        <input type='password' placeholder='비밀번호를 입력해 주세요.'/>
+                        <input type='password' placeholder='비밀번호를 입력해 주세요.' />
                     </div>
                     {/* 유효성검사
                     <div>
@@ -48,7 +49,7 @@ const Join = () => {
                         <lable>비밀번호 확인</lable>
                     </div>
                     <div>
-                        <input type='password'/>
+                        <input type='password' />
                         {/* <div>
                             <p>비밀번호가 일치하지 않습니다.</p>
                         </div> */}
@@ -56,15 +57,15 @@ const Join = () => {
                     <div>
                         <label>성별</label>
                         <div>
-                           <span><div class="radio">남자</div></span>
-                           <span><div class="radio">여자</div></span>
+                            <span><div class="radio">남자</div></span>
+                            <span><div class="radio">여자</div></span>
                         </div>
                     </div>
                     <div>
                         <label>휴대전화 번호</label>
                     </div>
                     <div>
-                        <input type='text' placeholder='예)010-1234-5678'/>
+                        <input type='text' placeholder='예)010-1234-5678' />
                     </div>
                     <div>
                         <button>인증번호 발송</button>
@@ -73,31 +74,31 @@ const Join = () => {
                         <label>인증번호 입력</label>
                     </div>
                     <div>
-                        <input type='text'/>
+                        <input type='text' />
                         <button>확인</button>
                     </div>
                     <div>
                         <label>우편번호</label>
                     </div>
                     <div>
-                        <input type='text'/>
+                        <input type='text' />
                         <button>우편번호 검색</button>
                     </div>
                     <div>
                         <label>주소</label>
                     </div>
                     <div>
-                        <input type='text'/>
+                        <input type='text' />
                     </div>
                     <div>
                         <label>상세주소</label>
                     </div>
                     <div>
-                        <input type='text'/>
-                    </div>    
+                        <input type='text' />
+                    </div>
                     <button>회원가입</button>
                 </form>
-                <a href='#'><p>고수로 가입하시나요 ?</p></a>  
+                <Link to='/pro/signup/main'><p>고수로 가입하시나요 ?</p></Link>
             </div>
         </div>
     );

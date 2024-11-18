@@ -1,13 +1,16 @@
 import React from 'react';
+import Notice_eventMenu from './Notice_eventMenu';
 
 const Notice = () => {
     return (
-        <div>
-            <h2>공지사항 / 이벤트</h2>
+        <div className='noticePage'>
+            <Notice_eventMenu/>
             <ul>
-                <li>전체글</li>
-                <li>공지글</li>
-                <li>이벤트</li>
+                <li>
+                    <div>
+                        공지 map으로 뽑음
+                    </div>
+                </li>
             </ul>
         </div>
     );
