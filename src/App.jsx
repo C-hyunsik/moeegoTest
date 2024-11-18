@@ -1,3 +1,4 @@
+import "./App.css";
 import React from "react";
 import { Router, Route, Routes, BrowserRouter} from "react-router-dom";
 import Header from "./components/Header";
@@ -18,8 +19,7 @@ import Study from './components/detail_category/Study';
 import Hobby from './components/detail_category/Hobby';
 import Car from './components/detail_category/Car';
 import About from './components/about/About';
-import "./App.css";
-
+import ProView from "./components/Pro/ProView";
 
 const App = () => {
   return (
@@ -42,6 +42,7 @@ const App = () => {
           <Route path={"/category/car"} element={<Car/>} />
           <Route path={"/about"} element={<About />} />
           <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
+          <Route path="/pro" element={<div className="main-content"><ProView /></div>} />
         </Routes>
         <Footer />
       </BrowserRouter>
