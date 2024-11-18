@@ -40,7 +40,8 @@ import Reviews from "./components/mainpage/Reviews.jsx";
 import CleaningSection from "./components/mainpage/CleaningSection.jsx";
 import Locations from "./components/mainpage/Locations.jsx";
 import ArticleMain from './components/articles/ArticleMain.jsx';
-import myHistory from "./components/mypage/MyHistory.jsx";
+import BookMarkPro from './components/mypage/BookMarkPro.jsx';
+import ProDetail from './components/Pro/ProDetail.jsx';
 
 const App = () => {
   return (
@@ -74,6 +75,7 @@ const App = () => {
 
           {/* 마이페이지 */}
           <Route path={"/mypage"} element={<MyPage />} />
+          <Route path={"/mypage/likepro"} element={<BookMarkPro />} />
           <Route path={"/mypage/reservation"} element={<MyReservation />} />
           <Route path={"/mypage/myhistory"} element={<MyHistory/>}/>
           <Route path={"/mypage/myhistory/myarticle"} element={<MyArticles/>}/>
@@ -100,6 +102,7 @@ const App = () => {
           <Route path="/pro/signup/main" element={<div className="main-content"><ProMain /></div>} />
           <Route path="/pro/signup/sub" element={<div className="main-content"><ProSub /></div>} />
           <Route path="/pro/signup" element={<div className="main-content"><Prosignup /></div>} />
+          <Route path="/pro/detail" element={<div className="main-content"><ProDetail /></div>} />
 
         </Routes>
         <Footer />
