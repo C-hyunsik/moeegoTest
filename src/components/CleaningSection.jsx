@@ -1,5 +1,5 @@
 import React from "react";
-import "./CleaningSection.css";
+import "../css/CleaningSection.css";
 
 function CleaningSection() {
   return (

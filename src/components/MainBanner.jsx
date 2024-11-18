@@ -1,5 +1,5 @@
 import React from "react";
-import "./MainBanner.css";
+import "../css/MainBanner.css";
 
 function MainBanner() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Reviews.css";
+import "../css/Reviews.css";
 
 function Reviews() {
   return (
