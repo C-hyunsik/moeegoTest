@@ -3,8 +3,8 @@ import React from "react";
 import { Router, Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Write from "./components/article/Write";
-import Update from "./components/article/Update";
+import Write from "./components/articles/Write";
+import Update from "./components/articles/Update";
 import Review from "./components/mypage/Review";
 import FreeBoardForm from "./components/Community/FreeBoardForm/FreeBoardForm.jsx";
 import ViewPage from "./components/Community/ViewPage/ViewPage.jsx";
@@ -70,8 +70,8 @@ const App = () => {
           <Route path="/cleaning" element={<div className="main-content"><CleaningSection /></div>} />
           <Route path="/locations" element={<div className="main-content"><Locations /></div>} />
 
-          <Route path="/community/Write" element={<div className="main-content"><Write /></div>} />
-          <Route path="/community/Update" element={<div className="main-content"><Update /></div>} />
+          <Route path="/article/Write" element={<div className="main-content"><Write /></div>} />
+          <Route path="/article/Update" element={<div className="main-content"><Update /></div>} />
           <Route path="/mypage/Review" element={<div className="main-content"><Review /></div>} />
 
           {/* 마이페이지 */}
