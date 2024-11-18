@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Header.css";
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -12,6 +13,7 @@ function Header() {
           <input type="text" placeholder="필요한 검색어를 입력하세요" />
           <a href="#">가입</a>
           <a href="#">로그인</a>
+          <Link to="/mypage">마이페이지</Link>
         </nav>
       </div>
     </header>
