@@ -8,6 +8,7 @@ import CleaningSection from "./components/CleaningSection";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 import "./App.css";
+import ProSearch from "./components/ProSearch/ProSearch";
 
 function HomePage() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/reviews" element={<div className="main-content"><Reviews /></div>} />
           <Route path="/cleaning" element={<div className="main-content"><CleaningSection /></div>} />
           <Route path="/locations" element={<div className="main-content"><Locations /></div>} />
+          <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
         </Routes>
         <Footer />
       </div>
