@@ -11,13 +11,13 @@ import Fashion_beauty from './components/detail_category/Fashion_beauty';
 import Study from './components/detail_category/Study';
 import Hobby from './components/detail_category/Hobby';
 import Car from './components/detail_category/Car';
-import About from './components/About/About';
+import About from './components/about/About';
 
 const App = () => {
   return (
     <div className='main-content'>
-      <Header />
       <BrowserRouter>
+        <Header />
 
         <Routes>
           <Route path={"/"} element={<MainPage/>} />
@@ -29,8 +29,8 @@ const App = () => {
           <Route path={"/category/car"} element={<Car/>} />
           <Route path={"/about"} element={<About />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 };
