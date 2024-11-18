@@ -9,6 +9,10 @@ import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 import "./App.css";
 
+import Write from "./components/article/Write";
+import Update from "./components/article/Update";
+import Review from "./components/mypage/Review";
+
 function HomePage() {
   return (
     <div className="main-content">
@@ -17,6 +21,9 @@ function HomePage() {
       <Reviews />
       <CleaningSection />
       <Locations />
+      <Write/>
+      <Update/>
+      <Review/>
     </div>
   );
 }
@@ -35,6 +42,11 @@ function App() {
           <Route path="/reviews" element={<div className="main-content"><Reviews /></div>} />
           <Route path="/cleaning" element={<div className="main-content"><CleaningSection /></div>} />
           <Route path="/locations" element={<div className="main-content"><Locations /></div>} />
+
+          <Route path="/community/Write" element={<div className="main-content"><Write /></div>} />
+          <Route path="/community/Update" element={<div className="main-content"><Update /></div>} />
+
+          <Route path="/mypage/Review" element={<div className="main-content"><Review /></div>} />
         </Routes>
         <Footer />
       </div>
