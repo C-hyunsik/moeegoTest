@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Router, Route, Routes, BrowserRouter} from "react-router-dom";
+import { Router, Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -22,6 +22,15 @@ import Hobby from './components/detail_category/Hobby';
 import Car from './components/detail_category/Car';
 import About from './components/about/About';
 import ProView from "./components/Pro/ProView";
+import MyPage from './components/mypage/MyPage';
+import Private from './components/mypage/Private';
+import Account from './components/mypage/account';
+import ChangeAddress from './components/mypage/ChangeAddress';
+import ChangePassword from './components/mypage/ChangePassword';
+import ChangeEmail from './components/mypage/ChangeEmail';
+import SignOut from './components/mypage/SignOut';
+import MyReservation from './components/mypage/MyReservation';
+import Success from './components/mypage/Success';
 
 const App = () => {
   return (
@@ -29,7 +38,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-    
+
           <Route path={"/"} element={<MainPage />} />
           <Route path={"/category/home"} element={<Home_interior />} />
           <Route path="/login" element={<div className="main-content"><Login /></div>} />
@@ -37,7 +46,7 @@ const App = () => {
           <Route path="/pro/signup/main" element={<div className="main-content"><ProMain /></div>} />
           <Route path="/pro/signup/sub" element={<div className="main-content"><ProSub /></div>} />
           <Route path="/pro/signup" element={<div className="main-content"><Prosignup /></div>} />
-          
+
           <Route path={"/category/outsourcing"} element={<Outsourcing />} />
           <Route path={"/category/fashion"} element={<Fashion_beauty />} />
           <Route path={"/category/study"} element={<Study />} />
@@ -57,6 +66,8 @@ const App = () => {
           <Route path={"/mypage/account/private/password"} element={<ChangePassword />} />
           <Route path={"/mypage/account/private/address"} element={<ChangeAddress />} />
           <Route path={"/mypage/account/private/signout"} element={<SignOut />} />
+          <Route path={"/mypage/account/private/success"} element={<Success />} />
+
           <Route path={"FreeBoardForm"} element={<div className="main-content"><FreeBoardForm /></div>} />
           <Route path={"ViewPage"} element={<div className="main-content"><ViewPage /></div>} />
         </Routes>
