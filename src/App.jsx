@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProSearch from "./components/ProSearch/ProSearch";
-import MainPage from './components/mainPage';
+import Mainpage from './components/mainpage';
 import { Router, Route, Routes, BrowserRouter} from "react-router-dom";
 import Home_interior from './components/detail_category/Home_interior';
 import Outsourcing from './components/detail_category/Outsourcing';
@@ -20,7 +20,7 @@ const App = () => {
         <Header />
 
         <Routes>
-          <Route path={"/"} element={<MainPage/>} />
+          <Route path={"/"} element={<Mainpage/>} />
           <Route path={"/category/home"} element={<Home_interior/>} />
           <Route path={"/category/outsourcing"} element={<Outsourcing />} />
           <Route path={"/category/fashion"} element={<Fashion_beauty/>} />
@@ -28,7 +28,7 @@ const App = () => {
           <Route path={"/category/hobby"} element={<Hobby/>} />
           <Route path={"/category/car"} element={<Car/>} />
           <Route path={"/about"} element={<About />} />
-          <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
+          <Route path="/pro/search" element={<ProSearch />} />
         </Routes>
         <Footer />
       </BrowserRouter>

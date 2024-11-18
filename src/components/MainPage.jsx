@@ -1,6 +1,5 @@
 import React from 'react';
 import "../css/Mainpage.css";
-import { Link } from 'react-router-dom';
 import MainBanner from './mainpage/MainBanner';
 import Banner from './mainpage/Banner';
 import Reviews from './mainpage/Reviews';
