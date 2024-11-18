@@ -25,7 +25,7 @@ const MyPage = () => {
             <div className='SearchProContainer'>
                 <h1>달인찾기</h1>
                 <div>
-                    <Link to='/searchpro' className='SearchProLink'>
+                    <Link to='/mypage/likepro' className='SearchProLink'>
                         <div>찜한 달인</div>
                         <div><img src="./src/image/next_icon.png" alt="nextIcon" /></div>
                     </Link>
