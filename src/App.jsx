@@ -1,52 +1,40 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import MainBanner from "./components/MainBanner";
-import Banner from "./components/Banner";
-import Reviews from "./components/Reviews";
-import CleaningSection from "./components/CleaningSection";
-import Locations from "./components/Locations";
-import Footer from "./components/Footer";
 import "./App.css";
-import ProInfo from "./components/Pro/ProInfo";
-import ProDetail from "./components/Pro/ProDetail";
-import ProIntroduce from "./components/Pro/ProIntroduce";
-import ProReview from "./components/Pro/ProReview";
-import Reservation from "./components/Pro/Reservation";
+import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ProSearch from "./components/ProSearch/ProSearch";
+import MainPage from './components/mainPage';
+import { Router, Route, Routes, BrowserRouter} from "react-router-dom";
+import Home_interior from './components/detail_category/Home_interior';
+import Outsourcing from './components/detail_category/Outsourcing';
+import Fashion_beauty from './components/detail_category/Fashion_beauty';
+import Study from './components/detail_category/Study';
+import Hobby from './components/detail_category/Hobby';
+import Car from './components/detail_category/Car';
+import About from './components/about/About';
 import ProView from "./components/Pro/ProView";
 
-function HomePage() {
+const App = () => {
   return (
-    <div className="main-content">
-      <MainBanner />
-      <Banner />
-      <Reviews />
-      <CleaningSection />
-      <Locations />
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <Router>
-      <div className="App">
+    <div className='main-content'>
+      <BrowserRouter>
         <Header />
         <Routes>
-          {/* 메인 페이지에 모든 컴포넌트를 렌더링 */}
-          <Route path="/" element={<HomePage />} />
-
-          {/* 개별 페이지로 접근할 수 있도록 각각 라우트 설정 */}
-          <Route path="/banner" element={<div className="main-content"><Banner /></div>} />
-          <Route path="/reviews" element={<div className="main-content"><Reviews /></div>} />
-          <Route path="/cleaning" element={<div className="main-content"><CleaningSection /></div>} />
-          <Route path="/locations" element={<div className="main-content"><Locations /></div>} />
+          <Route path={"/"} element={<MainPage/>} />
+          <Route path={"/category/home"} element={<Home_interior/>} />
+          <Route path={"/category/outsourcing"} element={<Outsourcing />} />
+          <Route path={"/category/fashion"} element={<Fashion_beauty/>} />
+          <Route path={"/category/study"} element={<Study/>} />
+          <Route path={"/category/hobby"} element={<Hobby/>} />
+          <Route path={"/category/car"} element={<Car/>} />
+          <Route path={"/about"} element={<About />} />
+          <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
           <Route path="/pro" element={<div className="main-content"><ProView /></div>} />
-         </Routes>
+        </Routes>
         <Footer />
-      </div>
-    </Router>
+      </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;
