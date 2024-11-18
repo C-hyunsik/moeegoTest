@@ -7,6 +7,14 @@ import Reviews from "./components/Reviews";
 import CleaningSection from "./components/CleaningSection";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
+
+import Login from "./components/login/Login";
+import Join from "./components/join/Join";
+import ProMain from "./components/pro/ProMain";
+import Prosignup from "./components/pro/Prosignup";
+import ProSub from "./components/pro/ProSub";
+
+
 import "./App.css";
 
 function HomePage() {
@@ -35,6 +43,13 @@ function App() {
           <Route path="/reviews" element={<div className="main-content"><Reviews /></div>} />
           <Route path="/cleaning" element={<div className="main-content"><CleaningSection /></div>} />
           <Route path="/locations" element={<div className="main-content"><Locations /></div>} />
+
+          <Route path="/login" element={<div className="main-content"><Login /></div>} />
+          <Route path="/signup" element={<div className="main-content"><Join /></div>} />
+          <Route path="/pro/signup/main" element={<div className="main-content"><ProMain /></div>} />
+          <Route path="/pro/signup/sub" element={<div className="main-content"><ProSub /></div>} />
+          <Route path="/pro/signup" element={<div className="main-content"><Prosignup /></div>} />
+
         </Routes>
         <Footer />
       </div>
