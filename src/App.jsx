@@ -8,6 +8,12 @@ import CleaningSection from "./components/CleaningSection";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 import "./App.css";
+import ProInfo from "./components/Pro/ProInfo";
+import ProDetail from "./components/Pro/ProDetail";
+import ProIntroduce from "./components/Pro/ProIntroduce";
+import ProReview from "./components/Pro/ProReview";
+import Reservation from "./components/Pro/Reservation";
+import ProView from "./components/Pro/ProView";
 
 function HomePage() {
   return (
@@ -35,7 +41,8 @@ function App() {
           <Route path="/reviews" element={<div className="main-content"><Reviews /></div>} />
           <Route path="/cleaning" element={<div className="main-content"><CleaningSection /></div>} />
           <Route path="/locations" element={<div className="main-content"><Locations /></div>} />
-        </Routes>
+          <Route path="/pro" element={<div className="main-content"><ProView /></div>} />
+         </Routes>
         <Footer />
       </div>
     </Router>
