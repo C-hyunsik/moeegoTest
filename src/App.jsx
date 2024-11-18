@@ -13,6 +13,15 @@ import Hobby from './components/detail_category/Hobby';
 import Car from './components/detail_category/Car';
 import About from './components/about/About';
 import ProView from "./components/Pro/ProView";
+import MyPage from './components/mypage/MyPage';
+import Private from './components/mypage/Private';
+import Account from './components/mypage/account';
+import ChangeAddress from './components/mypage/ChangeAddress';
+import ChangePassword from './components/mypage/ChangePassword';
+import ChangeEmail from './components/mypage/ChangeEmail';
+import SignOut from './components/mypage/SignOut';
+import MyReservation from './components/mypage/MyReservation';
+import Success from './components/mypage/Success';
 
 const App = () => {
   return (
@@ -40,6 +49,7 @@ const App = () => {
           <Route path={"/mypage/account/private/password"} element={<ChangePassword />} />
           <Route path={"/mypage/account/private/address"} element={<ChangeAddress />} />
           <Route path={"/mypage/account/private/signout"} element={<SignOut />} />
+          <Route path={"/mypage/account/private/success"} element={<Success />} />
         </Routes>
         <Footer />
       </BrowserRouter>
