@@ -51,7 +51,7 @@ const MyPage = () => {
             <div className='ArticleHistoryContainer'>
                 <h1>커뮤니티</h1>
                 <div>
-                    <Link to='' className='ArticleHistoryLink'>
+                    <Link to='/mypage/myhistory' className='ArticleHistoryLink'>
                         <div>커뮤니티 작성 글/댓글</div>
                         <div><img src="./src/image/next_icon.png" alt="nextIcon" /></div>
                     </Link>

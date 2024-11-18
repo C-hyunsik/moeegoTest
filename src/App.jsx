@@ -19,6 +19,9 @@ import Car from './components/detail_category/Car';
 import About from './components/about/About';
 import ProView from "./components/Pro/ProView";
 import MyPage from './components/mypage/MyPage';
+import MyHistory from './components/mypage/MyHistory';
+import MyArticles from './components/mypage/MyArticles';
+import MyComments from './components/mypage/MyComments';
 import Private from './components/mypage/Private';
 import Account from './components/mypage/account';
 import ChangeAddress from './components/mypage/ChangeAddress';
@@ -37,6 +40,7 @@ import Reviews from "./components/mainpage/Reviews.jsx";
 import CleaningSection from "./components/mainpage/CleaningSection.jsx";
 import Locations from "./components/mainpage/Locations.jsx";
 import ArticleMain from './components/articles/ArticleMain.jsx';
+import myHistory from "./components/mypage/MyHistory.jsx";
 
 const App = () => {
   return (
@@ -71,6 +75,9 @@ const App = () => {
           {/* 마이페이지 */}
           <Route path={"/mypage"} element={<MyPage />} />
           <Route path={"/mypage/reservation"} element={<MyReservation />} />
+          <Route path={"/mypage/myhistory"} element={<MyHistory/>}/>
+          <Route path={"/mypage/myhistory/myarticle"} element={<MyArticles/>}/>
+          <Route path={"/mypage/myhistory/mycomment"} element={<MyComments/>}/>
           <Route path={"/mypage/account"} element={<Account />} />
           <Route path={"/mypage/account/private"} element={<Private />} />
           <Route path={"/mypage/account/private/email"} element={<ChangeEmail />} />
@@ -78,6 +85,7 @@ const App = () => {
           <Route path={"/mypage/account/private/address"} element={<ChangeAddress />} />
           <Route path={"/mypage/account/private/signout"} element={<SignOut />} />
           <Route path={"/mypage/account/private/success"} element={<Success />} />
+          
 
           {/* 커뮤니티 페이지 */}
           <Route path={"/article"} element={<div className="main-content"><ArticleMain /></div>} />
