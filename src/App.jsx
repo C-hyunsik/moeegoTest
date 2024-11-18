@@ -6,7 +6,10 @@ import Footer from "./components/Footer";
 import Write from "./components/articles/Write";
 import Update from "./components/articles/Update";
 import Review from "./components/mypage/Review";
+<<<<<<< HEAD
 import FreeBoardForm from "./components/articles/FreeBoardForm/FreeBoardForm.jsx";
+=======
+>>>>>>> 7be641028e13f5d621e2129042d9e7a0309d0102
 import ViewPage from "./components/articles/ViewPage/ViewPage.jsx";
 
 import ProSearch from "./components/ProSearch/ProSearch";
@@ -37,6 +40,8 @@ import Banner from "./components/mainpage/Banner.jsx";
 import Reviews from "./components/mainpage/Reviews.jsx";
 import CleaningSection from "./components/mainpage/CleaningSection.jsx";
 import Locations from "./components/mainpage/Locations.jsx";
+import ArticleMain from './components/articles/ArticleMain.jsx';
+import FreeBoardForm from './components/articles/FreeBoardForm/FreeBoardForm.jsx';
 
 const App = () => {
   return (
@@ -80,7 +85,8 @@ const App = () => {
           <Route path={"/mypage/account/private/success"} element={<Success />} />
 
           {/* 커뮤니티 페이지 */}
-          <Route path={"/article"} element={<div className="main-content"><FreeBoardForm /></div>} />
+          <Route path={"/article"} element={<div className="main-content"><ArticleMain /></div>} />
+          <Route path={"/article/free"} element={<div className="main-content"><FreeBoardForm /></div>} />
           <Route path={"/article/viewpage"} element={<div className="main-content"><ViewPage /></div>} />
 
           {/* 회원가입/로그인 페이지 */}
