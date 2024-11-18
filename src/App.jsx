@@ -10,8 +10,8 @@ import ProMain from "./components/pro/ProMain";
 import Prosignup from "./components/pro/Prosignup";
 import ProSub from "./components/pro/ProSub";
 
-import FreeBoardForm from "./components/Community/FreeBoardForm/FreeBoardForm.jsx";
-import ViewPage from "./components/Community/ViewPage/ViewPage.jsx";
+import FreeBoardForm from "./components/articles/FreeBoardForm/FreeBoardForm.jsx";
+import ViewPage from "./components/articles/viewpage/ViewPage.jsx";
 import ProSearch from "./components/ProSearch/ProSearch";
 import MainPage from './components/mainPage';
 import Home_interior from './components/detail_category/Home_interior';
@@ -38,8 +38,11 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path={"/"} element={<MainPage/>} />
-          <Route path={"/category/home"} element={<Home_interior/>} />
+          {/* 메인페이지 */}
+          <Route path={"/"} element={<MainPage />} />
+
+          {/* 카테고리 페이지 */}
+          <Route path={"/category/home"} element={<Home_interior />} />
           <Route path={"/category/outsourcing"} element={<Outsourcing />} />
           <Route path={"/category/fashion"} element={<Fashion_beauty />} />
           <Route path={"/category/study"} element={<Study />} />
@@ -48,7 +51,6 @@ const App = () => {
           <Route path={"/about"} element={<About />} />
           <Route path="/pro/search" element={<div className="main-content"><ProSearch /></div>} />
           <Route path="/pro" element={<div className="main-content"><ProView /></div>} />
-
 
           {/* 마이페이지 */}
           <Route path={"/mypage"} element={<MyPage />} />
@@ -61,10 +63,15 @@ const App = () => {
           <Route path={"/mypage/account/private/signout"} element={<SignOut />} />
           <Route path={"/mypage/account/private/success"} element={<Success />} />
 
-          <Route path={"FreeBoardForm"} element={<div className="main-content"><FreeBoardForm /></div>} />
-          <Route path={"ViewPage"} element={<div className="main-content"><ViewPage /></div>} />
+          {/* 커뮤니티 페이지 */}
+          <Route path={"/article"} element={<div className="main-content"><FreeBoardForm /></div>} />
+          <Route path={"/article/viewpage"} element={<div className="main-content"><ViewPage /></div>} />
+
+          {/* 회원가입/로그인 페이지 */}
           <Route path="/login" element={<div className="main-content"><Login /></div>} />
           <Route path="/signup" element={<div className="main-content"><Join /></div>} />
+
+          {/* 달인 가입 페이지 */}
           <Route path="/pro/signup/main" element={<div className="main-content"><ProMain /></div>} />
           <Route path="/pro/signup/sub" element={<div className="main-content"><ProSub /></div>} />
           <Route path="/pro/signup" element={<div className="main-content"><Prosignup /></div>} />

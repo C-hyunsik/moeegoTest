@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProjoinMain = () => {
     return (
@@ -9,94 +10,93 @@ const ProjoinMain = () => {
                     <ul>
                         {/* 이부분 메인카테고리 테이블 포이치로 돌릴 예정 */}
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/pro/signup/sub">
                                 <div>
-                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg"/>
+                                    <img src="https://dmmj3ljielax6.cloudfront.net/upload/requestForm/0a9a3bf9-4ce6-4968-8090-5bfcf1164bcb.svg" />
                                     <h1>설치/수리</h1>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
