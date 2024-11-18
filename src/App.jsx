@@ -6,10 +6,9 @@ import Footer from "./components/Footer";
 import Write from "./components/articles/Write";
 import Update from "./components/articles/Update";
 import Review from "./components/mypage/Review";
-<<<<<<< HEAD
+
 import FreeBoardForm from "./components/articles/FreeBoardForm/FreeBoardForm.jsx";
-=======
->>>>>>> 7be641028e13f5d621e2129042d9e7a0309d0102
+
 import ViewPage from "./components/articles/ViewPage/ViewPage.jsx";
 
 import ProSearch from "./components/ProSearch/ProSearch";
