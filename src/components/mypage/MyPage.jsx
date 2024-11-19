@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import '../../css/mypage/MyPage.css';
 
 const MyPage = () => {
     return (
@@ -23,7 +24,7 @@ const MyPage = () => {
             <hr />
 
             <div className='SearchProContainer'>
-                <h1>달인찾기</h1>
+                <h3>달인찾기</h3>
                 <div>
                     <Link to='/mypage/likepro' className='SearchProLink'>
                         <div>찜한 달인</div>
@@ -34,7 +35,7 @@ const MyPage = () => {
             <hr />
 
             <div className='ActivityDetailsContainer'>
-                <h1>모이고 활동내역</h1>
+                <h3>모이고 활동내역</h3>
                 <div>
                     <Link to='/mypage/reservation' className='ActivityDetailsLink'>
                         <div>모이고 예약 내역</div>
@@ -49,7 +50,7 @@ const MyPage = () => {
             <hr />
 
             <div className='ArticleHistoryContainer'>
-                <h1>커뮤니티</h1>
+                <h3>커뮤니티</h3>
                 <div>
                     <Link to='/mypage/myhistory' className='ArticleHistoryLink'>
                         <div>커뮤니티 작성 글/댓글</div>

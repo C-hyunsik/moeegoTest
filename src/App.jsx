@@ -108,7 +108,7 @@ const App = () => {
         </div>
         <Footer />
       </BrowserRouter>
-    </div>
+    </div >
   );
 };
 
