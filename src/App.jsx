@@ -6,15 +6,8 @@ import Footer from "./components/Footer";
 import Write from "./components/articles/Write";
 import Update from "./components/articles/Update";
 import Review from "./components/mypage/Review";
-import FreeBoardForm from "./components/Community/FreeBoardForm/FreeBoardForm.jsx";
-import ViewPage from "./components/Community/ViewPage/ViewPage.jsx";
-
-import Login from "./components/login/Login";
-import Join from "./components/join/Join";
-import ProMain from "./components/pro/ProMain";
-import Prosignup from "./components/pro/Prosignup";
-import ProSub from "./components/pro/ProSub";
-
+import FreeBoardForm from "./components/articles/FreeBoardForm/FreeBoardForm.jsx";
+import ViewPage from "./components/articles/ViewPage/ViewPage.jsx";
 import ProSearch from "./components/ProSearch/ProSearch";
 import MainPage from './components/mainPage';
 import Home_interior from './components/detail_category/Home_interior';
