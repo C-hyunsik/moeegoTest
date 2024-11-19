@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -42,6 +43,11 @@ const Login = () => {
                     <a href="#">이메일 찾기</a>
                     <div></div>
                     <a href="#">비밀번호 찾기</a>
+                    <div></div>
+                    <Link to="/signup">
+                        <a href='#'>회원가입</a>
+                    </Link>
+                    
                 </div>
         
                 {/* 이전에 로그인한 기록이 있으면 아래 문구 출력 시킴 
